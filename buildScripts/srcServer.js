@@ -19,6 +19,16 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, '../src/index.html'));
 });
 
+app.get('/users', function (req, res) {
+  // Hard coded user data for demo and simplicity, Replace the following
+  // wit a real call to a database
+  res.json([
+    { "id": 1, "firstName": "Bob", "lastName": "Smith", "email": "bob@mail.com" },
+    { "id": 2, "firstName": "Tammy", "lastName": "Who", "email": "twho@whoville.com" },
+    { "id": 3, "firstName": "The", "lastName": "Grinch", "email": "mr.grouchy@mail.com" }
+  ]);
+});
+
 app.listen(port, function (err) {
   if (err) {
     console.log(err);
