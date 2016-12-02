@@ -1,6 +1,6 @@
 {
   "name": "JavaScript-StarterKit",
-  "version": "1.0.0",
+  "version": "1.0.10",
   "description": "JavaScript development environment Pluralsight course by Cory House",
   "scripts": {
     "start": "npm-run-all --parallel security-check build lint-watch test-watch start-mockapi",
